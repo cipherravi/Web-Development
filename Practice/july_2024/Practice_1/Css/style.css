@@ -1,3 +1,16 @@
 * {
-  background-color: blue;
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: rgb(22, 182, 136);
+  background-color: aquamarine;
+  border: rgb(31, 147, 75);
+  padding: 2px;
+  width: 400px;
+  margin: 20px;
 }
