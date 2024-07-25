@@ -22,3 +22,4 @@
 ////querySelectorAll
 
 // console.log(document.querySelectorAll("li"));
+console.log("hi");
