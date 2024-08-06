@@ -62,20 +62,75 @@
 
 //// CSS via JS
 // let content = document.querySelector("h1");
+
 // //.style way1  ony one item can change
+
 // content.style.color = "blue";
 // content.style.backgroundColor = "white";
+
 // //.cssText way2 multiple item can change
+
 // content.style.cssText = "color:red;background-color:yellow;font-size:2.4em";
 
 //.setAttribute way3 it uses for many methods like for style for setting id and classes . for any attribute you can use
+
 // content.setAttribute("style", "color:yellow; background-color:green");
 
 //// ClassName & classList ; classList is useful rather than ClassName
+
 ////classList methods --> add() , remove() , toggle() , contains()
+
 //// writing in browser it is working fine
+
 // let classes = document.querySelector("#divL");
 // classes.classList;
 // console.log(classes);
 
-////
+//// Event Listener
+
+//fetching element
+// let element = document.querySelector("h1");
+// // defining function
+// function changeBackground() {
+//   element.style.background = "red";
+// }
+// //adding event listener
+// element.addEventListener("click", changeBackground);
+// //removing event listener
+// element.removeEventListener("click", changeBackground);
+
+//fetching event
+// para.addEventListener("click", function (event) {
+//   console.log(event);
+// });
+
+///Prevent Default
+// let link = document.querySelector("#link");
+// link.addEventListener("click", function (event) {
+//   event.preventDefault();
+//   console.log("Prevented link from being open");
+// });
+
+function personData() {
+  let data = {
+    firstName: "Ravi",
+    age: 20,
+    intro: function () {
+      console.log(
+        `Hello i am ${this.firstName} and i am ${this.age} years old`
+      );
+    },
+  };
+  return data;
+}
+let obj1 = personData();
+obj1.age;
+
+// let data = {
+//   firstName: "Ravi",
+//   age: 20,
+//   intro: function () {
+//     console.log(`Hello i am ${firstName} and i am ${age} years old`);
+//   },
+// };
+// console.log(data.firstName);

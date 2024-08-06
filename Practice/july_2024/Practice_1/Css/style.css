@@ -1,16 +1,20 @@
 * {
-  background-color: rgb(246, 188, 188);
+  background-color: rgb(179, 116, 116);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+.heading {
   color: rgb(22, 182, 136);
   background-color: aquamarine;
   border: rgb(31, 147, 75);
   padding: 2px;
-  width: 400px;
+  width: 40%;
   margin: 20px;
+}
+.list {
+  width: 50%;
+}
+#link {
+  font-size: large;
+  width: 10px;
+  height: 10px;
 }

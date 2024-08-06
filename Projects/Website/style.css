@@ -1,0 +1,31 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden; /* Prevent scrolling on the body */
+}
+#wrapper {
+  overflow-y: auto;
+  background-color: rgb(212, 191, 155);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+#navbar {
+  width: 100vw;
+  height: 5vh;
+  background-color: #333;
+  position: fixed;
+}
+.more {
+  margin-top: 2.5rem;
+  width: 100vw;
+  height: 10vh;
+  background-color: #ce1c1c;
+}
