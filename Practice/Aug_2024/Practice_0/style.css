@@ -1,0 +1,41 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.gallery-container {
+  width: 80vw; /* Adjust the width as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px; /* Space between images */
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Optional: Add some visual styles for hover */
+.gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
