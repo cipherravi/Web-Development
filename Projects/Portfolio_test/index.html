@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <img
+          id="banner"
+          src="https://images.unsplash.com/photo-1698138819865-88d3add4838f?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Banner"
+        />
+        <img id="myphoto" src="me2.png" alt="MyPhoto" />
+        <nav>
+          <a class="navbutton" href="#">Home</a>
+          <a class="navbutton" href="#">Projects</a>
+          <a class="navbutton" href="Pages/About/about.html">About</a>
+          <a class="navbutton" href="#">Contact</a>
+          <!-- <a class="navbutton" href="#">Hire Me</a> -->
+          <div class="buttons">
+            <button class="blob-btn">
+              Hire Me
+              <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                </span>
+              </span>
+            </button>
+            <br />
+          </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  result="blur"
+                  stdDeviation="10"
+                ></feGaussianBlur>
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                  result="goo"
+                ></feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+        </nav>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
